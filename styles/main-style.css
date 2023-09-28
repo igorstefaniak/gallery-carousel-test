@@ -1,0 +1,40 @@
+
+/* Igor Stefaniak */
+
+@charset "UTF-8";
+
+:root {
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --error: #dc3545;
+    --accent: #e543ee;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #FFF;
+        --text-color: #000;
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --text-color: #FFF;
+    }
+}
+
+* {
+    font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+._vanish {
+    visibility: hidden;
+    opacity: 0;
+}
+
+img[data-enlargable] {width: 100px;}
